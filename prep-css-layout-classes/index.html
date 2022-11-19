@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+      background-color: rgb(252, 239, 216);
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+
+
+    }
+
+    p {
+
+      text-align: left;
+
+    }
+
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+
+
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+      background-color: rgb(255, 248, 236);
+      border-style: none;
+      border-width: .5px;
+      margin: 15px;
+      box-shadow: 1px 1px 5px 3px rgb(175, 175, 175);
+    }
+
+    img {
+
+      width: 100%;
+    }
+
+    img:hover {
+      transform: scale(1.10);
+    }
+
+
+    .heading-container {
+      display: flex;
+      flex-direction: column;
+      border-style: outset;
+      border-color: rgb(255, 248, 236);
+      border: none;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px 3px rgb(175, 175, 175);
+      background-color: rgb(255, 248, 236);
+      padding: 1px;
+      margin: 5px;
+      margin-top: .2rem;
+
+    }
+
+    #temple-box {
+      display: flex;
+      justify-content: center;
+      border-color: rgb(255, 248, 236);
+      border: none;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px 2px rgb(175, 175, 175);
+      background-color: rgb(255, 248, 236);
+      margin-top: 5px;
+    }
+
+    #raiders-box {
+      display: flex;
+      justify-content: center;
+      border-color: rgb(255, 248, 236);
+      border: none;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px 2px rgb(175, 175, 175);
+      background-color: rgb(255, 248, 236);
+      margin-top: 5px;
+    }
+
+
+    #crusade-box {
+      display: flex;
+      justify-content: center;
+      border-color: rgb(255, 248, 236);
+      border: none;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px 2px rgb(175, 175, 175);
+      background-color: rgb(255, 248, 236);
+      margin-top: 5px;
+    }
+
+    .raiders-text {
+
+      background-color: rgba(247, 238, 224, 0.76)
+    }
+
+    .doom-text {
+
+      background-color: rgba(247, 238, 224, 0.76)
+    }
+
+    .crusade-text {
+
+      background-color: rgba(247, 238, 224, 0.76)
+    }
+
+    .footer-container {
+      display: inline-block;
+
+
+    }
+
+    #footer {}
+
+
+    #temple-heading {
+      display: flex;
+      justify-content: center;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="heading-container">
+    <div>
+      <h1><em>Indiana Jones</em></h1>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="column"><img id="temple-box" alt="temple of doom" src="./images/temple.jpg">
+        <h2> Temple of Doom</h2>
+        <p class="doom-text">ndiana Jones and the Temple of Doom is a 1984 American action-adventure film directed by
+          Steven Spielberg. It is the
+          second installment in the Indiana Jones franchise, and a prequel to the 1981 film Raiders of the Lost Ark,
+          featuring
+          Harrison Ford who reprises his role as the title character. Kate Capshaw, Amrish Puri, Roshan Seth, Philip
+          Stone, and Ke
+          Huy Quan star in supporting roles. In the film, after arriving in India, Indiana Jones is asked by desperate
+          villagers
+          to find a mystical stone and rescue their children from a Thuggee cult practicing child slavery, black magic,
+          and ritual
+          human sacrifice in honor of the goddess Kali.<a href="https://www.imdb.com/title/tt0087469/"> Click here</a>
+          for more infomtation</p>
+        </p>
+      </div>
+      <div class="column"><img id="raiders-box" alt="raiders of the lost ark" src="./images/raiders.jpg">
+        <h2> Raiders of the lost ark</h2>
+        <p class="raiders-text">Raiders of the Lost Ark is a 1981 American action-adventure film directed by Steven
+          Spielberg and written by Lawrence
+          Kasdan, based on a story by George Lucas and Philip Kaufman. It stars Harrison Ford, Karen Allen, Paul
+          Freeman, Ronald
+          Lacey, John Rhys-Davies, and Denholm Elliott. Ford portrays Indiana Jones, a globe-trotting archaeologist
+          vying with
+          Nazi German forces in 1936 to recover the long-lost Ark of the Covenant, a relic said to make an army
+          invincible.
+          Teaming up with his tough former lover Marion Ravenwood (Allen), Jones races to stop rival archaeologist Dr.
+          René Belloq
+          (Freeman) from guiding the Nazis to the Ark and its power.<a href="https://www.imdb.com/title/tt0082971/">Click here</a> for more information.</p>
+      </div>
+      <div class="column"><img id="crusade-box" alt="The last crusade" src="./images/crusade.jpg">
+        <h2>The Last Crusade</h2>
+        <p class="crusade-text">Indiana Jones and the Last Crusade is the third film in the Indiana Jones series.
+          Released in 1989, it was directed by
+          Steven Spielberg. Although it was the third motion picture released, the movie is chapter twenty-five in The
+          Complete
+          Adventures of Indiana Jones.
+
+          Set two years after the events of Raiders of the Lost Ark, the story follows archaeologist Indiana Jones as he
+          discovers
+          his estranged father has gone missing while seeking out clues leading to the Holy Grail. Guided in his search
+          by his
+          father's diary, Jones learns that the Nazis are also interested in the Biblical cup, and must overcome them to
+          be
+          reunited with his parent.<a href="https://www.imdb.com/title/tt0097576/"> Click here</a> for more information.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Complete the HTML here -->
+
+</body>
+
+</html>
