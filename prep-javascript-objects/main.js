@@ -7,7 +7,7 @@ var person = {
 
 console.log(person);
 
-var fullName = ' My full name is ' + 'Joshua ' + 'Tenny.';
+var fullName = ' My full name is ' + person.firstName + person.lastName;
 console.log(fullName);
 
 person.job = ' Web Developer';
