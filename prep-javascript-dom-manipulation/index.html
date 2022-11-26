@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript DOM Manipulation</title>
+  <style>
+    #container {
+      border: 2px solid green;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <p class="first-paragraph">
+      I really like coding.
+    </p>
+    <p class="second-paragraph">
+
+    </p>
+    <p class="third-paragraph">
+
+    </p>
+  </div>
+  <script>
+    // Your code here;
+const $secondParagraph = document.getElementsByClassName('second-paragraph');
+console.log($secondParagraph);
+
+document.getElementsByClassName('second-paragraph').innerHTML = 'I also really like to watch television and eating pancakes.';
+
+const $thirdParagraph = document.getElementsByClassName('third-paragraph');
+console.log($thirdParagraph);
+
+document.getElementsByClassName('third-paragraph').innerHTML = 'I hope one day to meet people that also like coding, television, and pancakes.';
+  </script>
+</body>
+</html>
