@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript DOM Manipulation</title>
+  <style>
+    #container {
+      border: 2px solid green;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <p class="first-paragraph">
+      I really like coding.
+    </p>
+    <p class="second-paragraph">
+
+    </p>
+    <p class="third-paragraph">
+
+    </p>
+  </div>
+  <script>
+    // Your code here;
+
+    var $secondParagraph = document.querySelector('.second-paragraph');
+$secondParagraph.textContent = 'I also really like to watch television and eating pancakes.';
+console.log($secondParagraph);
+
+var $thirdParagraph = document.querySelector('.third-paragraph');
+$thirdParagraph.textContent = 'I hope one day to meet people that also like coding, television, and pancakes.';
+console.log($thirdParagraph);
+  </script>
+</body>
+</html>
